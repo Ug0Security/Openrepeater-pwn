@@ -1,0 +1,3 @@
+default password : admin/openrepeater
+shell via module upload
+backdoor module provided, install, activate, go in settings, use "test" parameter to run cmds (modules.php?settings=74&test=ls%20-alh)
